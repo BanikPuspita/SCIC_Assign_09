@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className="space-y-0 overflow-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen bg-linear-to-br from-slate-900 via-blue-900 to-slate-900 text-white flex items-center justify-center overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl"></div>
@@ -14,14 +14,14 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-          <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 bg-clip-text text-transparent">
+          <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-linear-to-r from-blue-300 via-blue-100 to-blue-300 bg-clip-text text-transparent">
             Welcome to TechHub
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed">
             Discover premium technology products at unbeatable prices. Your ultimate destination for innovation and quality.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Link href="/items" className="px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold rounded-lg transition transform hover:scale-105 shadow-lg hover:shadow-xl">
+            <Link href="/items" className="px-8 py-4 bg-linear-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold rounded-lg transition transform hover:scale-105 shadow-lg hover:shadow-xl">
               Explore Products
             </Link>
             <Link href="/login" className="px-8 py-4 border-2 border-blue-400 text-blue-300 hover:bg-blue-950 font-bold rounded-lg transition transform hover:scale-105">
@@ -45,13 +45,13 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                Since 2020, TechHub has been revolutionizing the way people shop for technology. We partner with the world's leading brands to bring you the latest gadgets and devices.
+                Since 2020, TechHub has been revolutionizing the way people shop for technology. We partner with the world&apos;s leading brands to bring you the latest gadgets and devices.
               </p>
               <p className="text-gray-700 text-lg leading-relaxed">
                 Our mission is simple: make cutting-edge technology accessible to everyone. We combine competitive pricing with exceptional customer service.
               </p>
             </div>
-            <div className="bg-gradient-to-br from-blue-100 to-blue-50 rounded-lg p-8">
+            <div className="bg-linear-to-br from-blue-100 to-blue-50 rounded-lg p-8">
               <div className="text-center">
                 <div className="text-5xl font-bold text-blue-600 mb-2">50K+</div>
                 <p className="text-gray-600 mb-6">Happy Customers</p>
@@ -66,7 +66,7 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="bg-gradient-to-br from-slate-50 to-blue-50 py-20 px-4">
+      <section className="bg-linear-to-br from-slate-50 to-blue-50 py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center text-slate-900">Why Choose TechHub?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -101,7 +101,7 @@ export default function Home() {
               { icon: "🎮", name: "Gaming", count: "25+ Products" },
               { icon: "📱", name: "Mobile", count: "30+ Devices" }
             ].map((cat, idx) => (
-              <div key={idx} className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl text-center hover:shadow-lg transition">
+              <div key={idx} className="bg-linear-to-br from-blue-50 to-blue-100 p-8 rounded-xl text-center hover:shadow-lg transition">
                 <div className="text-6xl mb-4">{cat.icon}</div>
                 <h3 className="text-2xl font-bold text-slate-900 mb-2">{cat.name}</h3>
                 <p className="text-gray-600">{cat.count}</p>
@@ -109,7 +109,7 @@ export default function Home() {
             ))}
           </div>
           <div className="text-center">
-            <Link href="/items" className="inline-block px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold rounded-lg transition transform hover:scale-105">
+            <Link href="/items" className="inline-block px-8 py-3 bg-linear-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold rounded-lg transition transform hover:scale-105">
               View All Products
             </Link>
           </div>
@@ -117,7 +117,7 @@ export default function Home() {
       </section>
 
       {/* How It Works */}
-      <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20 px-4">
+      <section className="bg-linear-to-br from-slate-900 to-slate-800 text-white py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">How It Works</h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -128,7 +128,7 @@ export default function Home() {
               { num: "4", title: "Enjoy", desc: "Receive your product with fast delivery" }
             ].map((step, idx) => (
               <div key={idx} className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full flex items-center justify-center font-bold text-2xl mx-auto mb-4">
+                <div className="w-16 h-16 bg-linear-to-r from-blue-400 to-blue-600 rounded-full flex items-center justify-center font-bold text-2xl mx-auto mb-4">
                   {step.num}
                 </div>
                 <h3 className="text-xl font-bold mb-2">{step.title}</h3>
@@ -150,11 +150,11 @@ export default function Home() {
               { name: "Mike Chen", role: "Software Developer", text: "Best prices I've found, plus their customer service is outstanding. Highly recommended!" },
               { name: "Emma Davis", role: "Designer", text: "Quality products and reliable delivery. I've already recommended TechHub to all my friends." }
             ].map((review, idx) => (
-              <div key={idx} className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-xl shadow-md hover:shadow-lg transition border border-blue-100">
+              <div key={idx} className="bg-linear-to-br from-blue-50 to-white p-8 rounded-xl shadow-md hover:shadow-lg transition border border-blue-100">
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => <span key={i} className="text-yellow-400 text-xl">★</span>)}
                 </div>
-                <p className="text-gray-700 mb-6 italic">"{review.text}"</p>
+                <p className="text-gray-700 mb-6 italic">&quot;{review.text}&quot;</p>
                 <div>
                   <p className="font-bold text-slate-900">{review.name}</p>
                   <p className="text-sm text-gray-600">{review.role}</p>
@@ -166,7 +166,7 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 px-4">
+      <section className="bg-linear-to-r from-blue-600 to-blue-800 text-white py-20 px-4">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
           {[
             { num: "50K+", label: "Happy Customers" },
@@ -183,14 +183,14 @@ export default function Home() {
       </section>
 
       {/* Final CTA */}
-      <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20 px-4 text-center">
+      <section className="bg-linear-to-br from-slate-900 to-slate-800 text-white py-20 px-4 text-center">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Upgrade Your Tech?</h2>
           <p className="text-lg text-gray-300 mb-8">
             Join thousands of satisfied customers shopping for premium tech products
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Link href="/items" className="px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold rounded-lg transition transform hover:scale-105 shadow-lg">
+            <Link href="/items" className="px-8 py-4 bg-linear-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold rounded-lg transition transform hover:scale-105 shadow-lg">
               Start Shopping
             </Link>
             <Link href="/login" className="px-8 py-4 border-2 border-blue-400 text-blue-300 hover:bg-blue-950 font-bold rounded-lg transition transform hover:scale-105">

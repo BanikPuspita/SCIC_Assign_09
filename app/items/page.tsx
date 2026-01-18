@@ -63,7 +63,7 @@ export default function ItemsPage() {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+      <div className="flex items-center justify-center min-h-screen bg-linear-to-br from-slate-50 to-blue-50">
         <div className="text-center">
           <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-600 border-opacity-100 mx-auto mb-4"></div>
           <p className="text-lg text-gray-600">Loading amazing products...</p>
@@ -73,9 +73,9 @@ export default function ItemsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-linear-to-br from-slate-50 to-blue-50">
       {/* Header */}
-      <div className="bg-gradient-to-r from-slate-900 to-blue-900 text-white py-16 px-4">
+      <div className="bg-linear-to-r from-slate-900 to-blue-900 text-white py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-5xl font-bold mb-4">Our Products</h1>
           <p className="text-xl text-gray-200">{filteredItems.length} premium tech products available</p>
@@ -127,7 +127,7 @@ export default function ItemsPage() {
                 onClick={() => setSelectedCategory(cat)}
                 className={`px-4 py-2 rounded-full font-medium transition ${
                   selectedCategory === cat
-                    ? "bg-gradient-to-r from-blue-500 to-blue-600 text-white"
+                    ? "bg-linear-to-r from-blue-500 to-blue-600 text-white"
                     : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                 }`}
               >
@@ -151,7 +151,7 @@ export default function ItemsPage() {
               <Link key={item.id} href={`/items/${item.id}`}>
                 <div className="bg-white rounded-xl shadow-md hover:shadow-2xl transition-all transform hover:-translate-y-2 h-full flex flex-col overflow-hidden group cursor-pointer">
                   {/* Image Container */}
-                  <div className="relative w-full h-48 bg-gradient-to-br from-gray-200 to-gray-100 overflow-hidden">
+                  <div className="relative w-full h-48 bg-linear-to-br from-gray-200 to-gray-100 overflow-hidden">
                     <img
                       src={item.image}
                       alt={item.name}
@@ -159,7 +159,7 @@ export default function ItemsPage() {
                     />
                     {item.stock !== undefined && (
                       <span className={`absolute top-3 right-3 px-3 py-1 rounded-full text-xs font-bold text-white ${
-                        item.stock > 0 ? "bg-gradient-to-r from-green-500 to-green-600" : "bg-gradient-to-r from-red-500 to-red-600"
+                        item.stock > 0 ? "bg-linear-to-r from-green-500 to-green-600" : "bg-linear-to-r from-red-500 to-red-600"
                       }`}>
                         {item.stock > 0 ? `${item.stock} In Stock` : "Out"}
                       </span>
@@ -167,21 +167,21 @@ export default function ItemsPage() {
                   </div>
 
                   {/* Content */}
-                  <div className="p-4 flex flex-col flex-grow">
+                  <div className="p-4 flex flex-col grow">
                     {item.category && (
                       <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-2">{item.category}</p>
                     )}
                     <h3 className="text-lg font-bold text-slate-900 mb-2 line-clamp-2 group-hover:text-blue-600 transition">
                       {item.name}
                     </h3>
-                    <p className="text-gray-600 text-sm mb-4 line-clamp-2 flex-grow">
+                    <p className="text-gray-600 text-sm mb-4 line-clamp-2 grow">
                       {item.description}
                     </p>
                     <div className="flex justify-between items-center pt-4 border-t border-gray-100">
-                      <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent">
+                      <span className="text-2xl font-bold bg-linear-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent">
                         ${item.price}
                       </span>
-                      <button className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-3 py-2 rounded-lg transition transform hover:scale-105 text-sm font-medium">
+                      <button className="bg-linear-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-3 py-2 rounded-lg transition transform hover:scale-105 text-sm font-medium">
                         View
                       </button>
                     </div>

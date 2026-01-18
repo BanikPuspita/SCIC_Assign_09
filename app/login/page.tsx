@@ -42,7 +42,7 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 p-4 relative overflow-hidden">
+    <div className="min-h-screen flex items-center justify-center bg-linear-to-br from-slate-900 via-blue-900 to-slate-900 p-4 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl"></div>
@@ -55,10 +55,10 @@ export default function LoginPage() {
         {/* Header */}
         <div className="text-center mb-8">
           <Link href="/" className="inline-flex items-center gap-2 mb-6 hover:opacity-80 transition">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center font-bold text-white text-lg">
+            <div className="w-10 h-10 bg-linear-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center font-bold text-white text-lg">
               T
             </div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent">
+            <span className="text-2xl font-bold bg-linear-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent">
               TechHub
             </span>
           </Link>
@@ -70,7 +70,7 @@ export default function LoginPage() {
         <div className="bg-white bg-opacity-95 backdrop-blur-md rounded-2xl shadow-2xl p-8">
           {error && (
             <div className="bg-red-100 border-l-4 border-red-500 text-red-700 px-4 py-4 rounded mb-6 flex items-start gap-3">
-              <svg className="w-5 h-5 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="w-5 h-5 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
               </svg>
               {error}
@@ -133,7 +133,7 @@ export default function LoginPage() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 disabled:from-blue-300 disabled:to-blue-300 text-white font-bold py-3 px-4 rounded-lg transition transform hover:scale-105 disabled:scale-100 shadow-lg"
+              className="w-full bg-linear-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 disabled:from-blue-300 disabled:to-blue-300 text-white font-bold py-3 px-4 rounded-lg transition transform hover:scale-105 disabled:scale-100 shadow-lg"
             >
               {loading ? (
                 <span className="flex items-center justify-center gap-2">
@@ -165,7 +165,7 @@ export default function LoginPage() {
           </div>
 
           {/* Demo Credentials */}
-          <div className="bg-gradient-to-r from-blue-50 to-blue-100 p-5 rounded-lg border-l-4 border-blue-500 space-y-3">
+          <div className="bg-linear-to-r from-blue-50 to-blue-100 p-5 rounded-lg border-l-4 border-blue-500 space-y-3">
             <p className="text-sm font-semibold text-gray-900 mb-3 flex items-center gap-2">
               <span className="text-blue-600">📝</span> Demo Login Credentials
             </p>
@@ -198,7 +198,7 @@ export default function LoginPage() {
         {/* Footer Links */}
         <div className="text-center mt-6 text-gray-300">
           <p className="mb-2">
-            Don't have an account?{" "}
+            Don&apos;t have an account?{" "}
             <Link href="/items" className="text-blue-400 hover:text-blue-300 font-semibold">
               Browse as guest
             </Link>

@@ -215,7 +215,7 @@ function AddItemForm() {
               <button
                 type="submit"
                 disabled={loading}
-                className="flex-1 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 disabled:from-blue-300 disabled:to-blue-300 text-white font-bold py-3 px-4 rounded-lg transition transform hover:scale-105 disabled:scale-100 shadow-lg"
+                className="flex-1 bg-linear-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 disabled:from-blue-300 disabled:to-blue-300 text-white font-bold py-3 px-4 rounded-lg transition transform hover:scale-105 disabled:scale-100 shadow-lg"
               >
                 {loading ? (
                   <span className="flex items-center justify-center gap-2">

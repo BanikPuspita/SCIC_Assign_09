@@ -43,7 +43,7 @@ export default function ItemDetailsPage() {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+      <div className="flex items-center justify-center min-h-screen bg-linear-to-br from-slate-50 to-blue-50">
         <div className="text-center">
           <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-600 border-opacity-100 mx-auto mb-4"></div>
           <p className="text-lg text-gray-600">Loading product details...</p>
@@ -54,7 +54,7 @@ export default function ItemDetailsPage() {
 
   if (error || !item) {
     return (
-      <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+      <div className="flex items-center justify-center min-h-screen bg-linear-to-br from-slate-50 to-blue-50">
         <div className="text-center">
           <svg className="w-16 h-16 text-red-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4v.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -72,7 +72,7 @@ export default function ItemDetailsPage() {
   const discount = Math.round((item.price * 0.1) / 10) * 10; // Calculate 10% discount
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-linear-to-br from-slate-50 to-blue-50">
       {/* Breadcrumb */}
       <div className="bg-white border-b">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center gap-2 text-sm">
@@ -87,7 +87,7 @@ export default function ItemDetailsPage() {
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
             {/* Image Section */}
-            <div className="flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-50 rounded-xl p-8">
+            <div className="flex items-center justify-center bg-linear-to-br from-gray-100 to-gray-50 rounded-xl p-8">
               <div className="relative w-full">
                 <img
                   src={item.image}
@@ -95,7 +95,7 @@ export default function ItemDetailsPage() {
                   className="w-full h-auto rounded-lg shadow-lg"
                 />
                 {inStock && (
-                  <div className="absolute top-4 right-4 bg-gradient-to-r from-green-500 to-green-600 text-white px-4 py-2 rounded-full font-bold shadow-lg">
+                  <div className="absolute top-4 right-4 bg-linear-to-r from-green-500 to-green-600 text-white px-4 py-2 rounded-full font-bold shadow-lg">
                     In Stock
                   </div>
                 )}
@@ -131,7 +131,7 @@ export default function ItemDetailsPage() {
                 {/* Price Section */}
                 <div className="mb-8 pb-8 border-b-2 border-gray-200">
                   <div className="flex items-baseline gap-4 mb-3">
-                    <p className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent">
+                    <p className="text-5xl font-bold bg-linear-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent">
                       ${item.price}
                     </p>
                     <p className="text-xl text-gray-500 line-through">
@@ -192,7 +192,7 @@ export default function ItemDetailsPage() {
                     disabled={!inStock}
                     className={`flex-1 font-bold py-4 px-4 rounded-lg transition transform hover:scale-105 text-lg ${
                       inStock
-                        ? "bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white shadow-lg hover:shadow-xl"
+                        ? "bg-linear-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white shadow-lg hover:shadow-xl"
                         : "bg-gray-300 text-gray-500 cursor-not-allowed"
                     }`}
                   >
@@ -204,7 +204,7 @@ export default function ItemDetailsPage() {
                 </div>
 
                 {/* Trust Badges */}
-                <div className="bg-gradient-to-r from-blue-50 to-blue-100 p-4 rounded-lg text-sm text-gray-700 space-y-2">
+                <div className="bg-linear-to-r from-blue-50 to-blue-100 p-4 rounded-lg text-sm text-gray-700 space-y-2">
                   <div className="flex items-center gap-2">
                     <span className="text-green-600 font-bold">✓</span> 30-day money-back guarantee
                   </div>

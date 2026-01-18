@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white mt-20">
+    <footer className="bg-linear-to-r from-slate-900 via-slate-800 to-slate-900 text-white mt-20">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
@@ -69,7 +69,7 @@ export default function Footer() {
       </div>
 
       {/* Top Gradient Border */}
-      <div className="h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent"></div>
+      <div className="h-1 bg-linear-to-r from-transparent via-blue-500 to-transparent"></div>
     </footer>
   );
 }

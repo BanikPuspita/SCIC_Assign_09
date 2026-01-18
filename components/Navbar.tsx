@@ -23,18 +23,18 @@ export default function Navbar() {
   };
 
   if (isLoading) {
-    return <nav className="bg-gradient-to-r from-slate-900 to-slate-800 text-white p-4">Loading...</nav>;
+    return <nav className="bg-linear-to-r from-slate-900 to-slate-800 text-white p-4">Loading...</nav>;
   }
 
   return (
-    <nav className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white shadow-lg sticky top-0 z-50">
+    <nav className="bg-linear-to-r from-slate-900 via-slate-800 to-slate-900 text-white shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition group">
-          <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center font-bold text-white">
+          <div className="w-8 h-8 bg-linear-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center font-bold text-white">
             T
           </div>
-          <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent group-hover:from-blue-300 group-hover:to-blue-200 transition">
+          <span className="text-2xl font-bold bg-linear-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent group-hover:from-blue-300 group-hover:to-blue-200 transition">
             TechHub
           </span>
         </Link>
@@ -72,7 +72,7 @@ export default function Navbar() {
           ) : (
             <Link 
               href="/login" 
-              className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 px-6 py-2 rounded-lg transition font-medium shadow-md hover:shadow-lg"
+              className="bg-linear-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 px-6 py-2 rounded-lg transition font-medium shadow-md hover:shadow-lg"
             >
               Login
             </Link>
