@@ -26,13 +26,14 @@ export default function ItemsPage() {
   useEffect(() => {
     const fetchItems = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/items");
+        const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:5000";
+        const response = await fetch(`${apiBase}/api/items`);
         if (!response.ok) throw new Error("Failed to fetch items");
         const data = await response.json();
         setItems(data);
         setFilteredItems(data);
       } catch (err) {
-        setError("Failed to load items. Make sure the server is running on http://localhost:5000");
+        setError("Failed to load items. Make sure the server is running and API_BASE_URL is configured correctly");
         console.error(err);
       } finally {
         setLoading(false);
